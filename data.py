@@ -4,6 +4,13 @@ CREATE_COURIER = BASE_URL + '/api/v1/courier'
 COURIER_LOGIN = BASE_URL + '/api/v1/courier/login'
 ORDER = BASE_URL + '/api/v1/orders'
 
+
+existing_user_payload = {
+            "login": "user",
+            "password": "password",
+            "first_name": "name"
+        }
+
 class TestMessages:
 
     COURIER_CREATE_SUCCESS = {"code": 201, "message": True}
